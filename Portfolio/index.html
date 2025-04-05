@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/@coreui/icons/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2><span>POR</span>TFOLIO</h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>    
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hello, It's Me <span>Hari Boopathy</span></h1>
+                <h2>I'm a Software Engineer</h2><br>
+                <a href="https://www.linkedin.com/in/hari-boopathy-t/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/hariboopathy" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://leetcode.com/u/hariboopathy10/" target="_blank" title="LeetCode Profile"><i class="cib-leetcode"></i></a>
+                <a href="mailto:hariboopaty10@gmail.com" target="_blank" title="Email"><i class="fa-regular fa-envelope"></i></a>
+                
+            </div>
+        </div>
+    </div>
+    <!-----------------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/images.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class ="sub-title">About Me</h1>
+                    <br>
+                    <p>
+                        Dedicated Software Engineer with hands-on experience at Zoho Corporation as a Software Debug Engineer Trainee, where I developed and
+                        deployed web applications and automated testing processes. Proficient in Java, Selenium, TestNG, and Zoho Cloud Platform configurations.
+                        Adept at debugging, optimizing, and integrating scalable solutions. Skilled in full-stack development,
+                        automation testing with a focus on performance and reliability.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Core Skills</span><br>DBMS , OOPS , DSA</li>
+                            <li><span>Languages</span><br>JAVA , SQL , HTML , CSS , JAVASCRIPT</li>
+                            <li><span>Tools</span><br>GIT , VS-CODE , ECLIPSE , MYSQL</li>
+                            <li><span>Competetive Programming</span><br>LEETCODE , GEEKFORGEEKS , CODING NINJAS</li>
+                            <li><span>Testing</span><br>AUTOMATION TESTING</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Shiash Info Solution &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;June 2023 - August 2023</span><br><br><strong>Full Stack Developer Intern</strong></li>
+                            <li>I have gained hands-on experience in both front-end and back-end web development, which includes proficiency in HTML, CSS, JavaScript,
+                                SQL to develop efficient applications.<br></li>
+                            <li>Participated in code reviews and discussionsto learn best practices and ensure the quality and maintainability of the codebase.</li>
+                            <li>Participated in code reviews and discussions to learn best practices and improve code quality.</li> 
+                            <br>
+                            <li><span>ZOHO CORPORATION &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;May 2024 - November 2024</span><br><br><strong>Software Debug Engineer Trainee</strong></li>
+                            <li>Developed and deployed three robust web applicationsintegrated with Zoho SAS product using Zoho Cloud Platform configurations.<br></li>
+                            <li>Automated testing processes for developed applications using Selenium with TestNG framework, achieving faster and more reliable test
+                                cycles.</li>
+                            <li>Led debugging efforts to identify and resolve application issues, ensuring optimal performance and reliability.</li>
+                            <li>Collaborated with cross-functional teamsto deploy applicationsin production environments, ensuring seamlessintegration and minimal
+                                downtime.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>PSNA College of Engineering & Technology &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019-2023</span><br>BTECH in Information Technology&nbsp;&nbsp;&nbsp;&nbsp;CGPA: 8.34</li>
+                            <li><span>CGPA </span><br>8.34</li>
+                            <li><span>Higher School Education </span><br> Percentage : 57.5%</li>
+                            <li><span>Secondary School Education </span><br> Percentage : 82.8%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------Services----------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class ="sub-title">My Services</h1>
+        <div class="services-list">
+         <div>
+            <i class="fa-solid fa-window-maximize"></i>
+            <h2>Web Developer</h2>
+            <p>As an experienced web developer, I am passionate about creating robust and user-friendly web applications.Proficient in front-end technologies like HTML, CSS, JavaScript</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Software Developer</h2>
+            <p>Passionate Software Engineer with 7 months of work experience in developing web applications and Automation Testing. Skilled at writing clear, concise code that is easy to maintain and troubleshoot.</p>
+        </div>
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Automation Testing</h2>
+            <p>Dedicated Automation Tester with hands-on experience at Zoho Corporation as a Software Debug Engineer Trainee Proficient in Java, Selenium, TestNG, and Zoho Cloud Platform configurations.</p>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">
+                My Work
+            </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>A2B Restaurant Website</h3>
+                        <p>A simple and responsive website for A2B Restaurant, featuring menu highlights, location details, and contact information for the Chennai (West Tambaram) branch.</p>
+                        <a href="https://a2b-website.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music website</h3>
+                        <p>Designed a responsive user interface that allows users to play songs, providing a simplified Spotify experience on the
+                        web.</p>
+                        <a href="https://spotify-modified.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>E-Commerce Chat Bot</h3>
+                        <p>CARYS Chat Assistant - Your personal shopping helper for all things CARYS. Ask about orders, returns, store info, and more. Quick answers, anytime you need help — online or in-store.</p>
+                        <a href="https://chat-assistant-ai.netlify.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/hariboopathy"  target="_blank"  class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-------------------contact------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-square-envelope"></i>hariboopathy10@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>91+8610013820</p>
+                    <a href="/images/Resume.pdf" download class="btn btn2"> Download CV</a> 
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
